@@ -1,0 +1,17 @@
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<script>
+function survey(cnt){
+var str = location.protocol + "//" + location.hostname + "/survey/" ;
+alert( str + cnt);
+location.href = str + cnt;
+}
+</script>
+</head><body>
+<div>
+<label for="bangou">番号：</label>
+<input type="text" id="bangou" name="number" size="10" maxlength="40" />
+<input type="submit" value="送信" onclick="survey(document.getElementById('bangou').value);">
+</div>
+</body></html>
